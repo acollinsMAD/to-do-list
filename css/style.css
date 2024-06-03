@@ -1,35 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: linear-gradient(to right, blue , purple);
     width: 100%;
 }
 
 div.container{
-    margin: 0 auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     background-color: lightblue;
     float: left;
-    width: 960px;
+    width: 50%;
     border-radius: 25px;
     padding: 25px;
 }
 
 div.userInput{
     margin: 0 auto;
-    width: 50%;
     float: left;
+    padding: 15px;
 }
 
 div.taskHolder{
     font-size: medium;
     font-weight: 200;
     margin: 0 auto;
-    width:400px;
     float:left;
+    padding: 15px;
 }
 
 input.taskInput {
     border-radius: 8px;
     padding: 10px;
-    width: 300px;
+    width: 100%;
     background: #6969693d;
     border-color: white;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .centered-axis-x {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 0);
+    background-color: lightblue;
+    float: left;
+    width: 50%;
+    border-radius: 25px;
+    padding: 25px;
 }
