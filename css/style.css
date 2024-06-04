@@ -7,37 +7,35 @@ body {
     width: 100%;
 }
 
-div.container{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: lightblue;
-    float: left;
-    width: 50%;
-    border-radius: 25px;
-    padding: 25px;
-}
-
 div.userInput{
     margin: 0 auto;
     float: left;
     padding: 15px;
 }
 
-div.taskHolder{
-    font-size: medium;
-    font-weight: 200;
-    margin: 0 auto;
-    float:left;
-    padding: 15px;
-}
-
 input.taskInput {
-    border-radius: 8px;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
     padding: 10px;
-    width: 100%;
-    background: #6969693d;
-    border-color: white;
+}
+.taskInputSubmit{
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    background: red;
+    border-radius: 25px;
+    float: left;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(128, 128, 128, 0.295);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -50,7 +48,7 @@ input.taskInput {
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-12 {width: 100%; display: flex;}
 
 .row::after {
     content: "";
@@ -63,9 +61,17 @@ input.taskInput {
     left: 50%;
     top: 30%;
     transform: translate(-50%, 0);
-    background-color: lightblue;
+    background-color: white;
     float: left;
     width: 50%;
     border-radius: 25px;
     padding: 25px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
 }
