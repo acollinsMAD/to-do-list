@@ -68,10 +68,23 @@ input.taskInput {
     padding: 25px;
 }
 
-ul li {
+ul li{
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    top: 12px;
+    background-image: url(../images/Circle_2px.png);
+    background-size: cover;
+    background-position: center;
+    float: left;
 }
