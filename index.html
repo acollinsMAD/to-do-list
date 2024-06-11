@@ -3,7 +3,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="javascript" href="scripts/module.js">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <title> To Do Practice </title>
@@ -12,16 +11,18 @@
             <h1>To-Do List Practice Form</h1>
             <div class="row">
                 <div class="col-12">
-                        <input placeholder="Input your task here" class="taskInput" id="taskInput">
-                        <input type="submit" class="taskInputSubmit" id="taskSubmit">
+                        <input placeholder="Input your task here" class="taskInput" id="taskInput" type="text">
+                        <!--<input type="submit" class="taskInputSubmit" id="taskSubmit" onclick="addTask()">-->
+                        <button onclick="addTask()" class="taskInputSubmit">submit</button>
                 </div>
         </div>
             <ul id="taskList" class="taskList">
+                <!--<li class="checked">placeholder</li>
                 <li>placeholder</li>
                 <li>placeholder</li>
-                <li>placeholder</li>
-                <li>placeholder</li>
+                <li>placeholder</li> -->
             </ul>
         </div>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
